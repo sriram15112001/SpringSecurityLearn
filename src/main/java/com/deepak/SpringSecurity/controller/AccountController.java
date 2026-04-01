@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WelcomeController {
+public class AccountController {
 
-    @GetMapping("/")
-    public String welcome() {
-        return "Welcome to Eazy Bank Application";
+    @GetMapping("/myAccount")
+    public String getAccountDetails() {
+        return "My Account Details";
     }
 }
